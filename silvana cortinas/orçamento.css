@@ -1,0 +1,97 @@
+#contatos{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 500px;
+    margin-bottom: 100px;
+    scroll-margin-top: 150px;
+}
+#contatos #cont{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, #e6d3e3, #e8b6e0);
+    border-radius: 10px;
+}
+#contatos .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff ;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    border: 5px solid transparent;
+    border-image-slice: 1;
+    border-radius: 10px;
+    margin: 0;
+}
+
+#contatos h1{
+    margin-bottom: .5em;
+}
+
+#contatos form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#contatos fieldset{
+    border-radius: 5px;
+    border-style: hidden;
+    margin-bottom: .5em;
+}
+#contatos #message{
+    padding: 10px;
+}
+#contatos input[type=submit]{
+    width: 100%;
+    height: 2.5em;
+    background-color: #e6d3e3;;
+    color: white;
+    text-decoration: underline solid white 1px;
+    cursor: pointer;
+}
+#contatos input{
+    height: 30px;
+    width: 100%;
+}
+
+#contatos #tel, #contatos #address{
+    width: 93%;
+}
+#contatos #inputs_form{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+@media (max-width:1105px){
+    #contatos form{
+        flex-direction: column;
+    }
+    #contatos{
+        margin-top: 40px;
+    }
+}
+@media (max-width:700px){
+    #contatos #cont{
+        width: 90%;
+    }
+    #contatos h1{
+        text-align: center;
+    }
+}
+@media (max-width:360px){
+    #contatos .container{
+        width: 70vw;
+    }
+}
